@@ -17,6 +17,7 @@
     <ul>
       <li><b>Аудиозаписи встреч, расшифровки и резюме.</b> Создаются и хранятся на компьютере пользователя.</li>
       <li><b>Доступ к Google Диску.</b> Программа запрашивает только ограниченный доступ <code>drive.file</code>: она может создавать файлы и работать лишь с теми файлами и папками, которые создала сама. Остальное содержимое Диска программе недоступно.</li>
+      <li><b>Голосовые отпечатки участников.</b> Используются, чтобы узнавать собеседников и подписывать их в расшифровке. Вычисляются и хранятся только на компьютере пользователя и никуда не передаются. Пользователь может удалить любой голос в разделе «Спикеры».</li>
       <li><b>Ключ OpenAI и токен доступа Google.</b> Хранятся только на компьютере пользователя, в зашифрованном виде (Windows DPAPI).</li>
     </ul>
 
@@ -46,6 +47,7 @@
     <ul>
       <li><b>Google user data.</b> The app requests only the <code>drive.file</code> scope. It can access only files and folders it created itself. Google user data is used solely to save meeting files to the user's Drive. It is never shared with third parties, never used for advertising and never used to train models, in line with the Google API Services User Data Policy, including the Limited Use requirements.</li>
       <li><b>OpenAI.</b> Meeting audio and text are sent to OpenAI for transcription and summarization, using the user's own API key.</li>
+      <li><b>Voice prints.</b> Used to recognize meeting participants. They are computed and stored only on the user's computer and are never transmitted. The user can delete any of them.</li>
       <li><b>Storage.</b> Recordings, transcripts and credentials are stored locally on the user's computer. Credentials are encrypted with Windows DPAPI.</li>
       <li><b>No developer servers.</b> The developer operates no servers and does not collect or store any user data.</li>
       <li><b>Revoking access.</b> Users can revoke access at any time in the app settings or at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
