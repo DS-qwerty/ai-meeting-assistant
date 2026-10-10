@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Политика конфиденциальности — AI Meeting Assistant</title>
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header><img src="icon.png" alt=""><div><h1>Политика конфиденциальности</h1><div class="muted">AI Meeting Assistant · действует с 10 октября 2026 г.</div></div></header>
+  <div class="card">
+    <p>AI Meeting Assistant — это программа для Windows. Она записывает онлайн-встречи пользователя, расшифровывает их, составляет резюме и сохраняет результаты на Google Диск пользователя.</p>
+
+    <h2>Какие данные обрабатываются</h2>
+    <ul>
+      <li><b>Аудиозаписи встреч, расшифровки и резюме.</b> Создаются и хранятся на компьютере пользователя.</li>
+      <li><b>Доступ к Google Диску.</b> Программа запрашивает только ограниченный доступ <code>drive.file</code>: она может создавать файлы и работать лишь с теми файлами и папками, которые создала сама. Остальное содержимое Диска программе недоступно.</li>
+      <li><b>Ключ OpenAI и токен доступа Google.</b> Хранятся только на компьютере пользователя, в зашифрованном виде (Windows DPAPI).</li>
+    </ul>
+
+    <h2>Куда передаются данные</h2>
+    <ul>
+      <li><b>OpenAI.</b> Аудио и текст встречи отправляются в OpenAI для расшифровки и составления резюме. Используется ключ API пользователя, применяются <a href="https://openai.com/policies/privacy-policy">правила OpenAI</a>.</li>
+      <li><b>Google Диск пользователя.</b> Туда загружаются запись и документ с резюме.</li>
+      <li>Больше никуда. У разработчика программы нет серверов: он не получает и не хранит никакие данные пользователей.</li>
+    </ul>
+
+    <h2>Использование данных Google</h2>
+    <p>Данные, полученные через API Google, используются только для того, чтобы сохранять файлы встреч на Диск пользователя. Они не передаются третьим лицам, не используются для рекламы и не используются для обучения моделей. Использование соответствует <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, включая требования Limited Use.</p>
+
+    <h2>Удаление данных</h2>
+    <ul>
+      <li>Пользователь может в любой момент отключить Google-аккаунт в настройках программы или на странице <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      <li>Удаление программы стирает её настройки и токены. Записи встреч остаются в папке «Документы\AI Встречи» и на Google Диске, пользователь может удалить их сам.</li>
+    </ul>
+
+    <h2>Контакты</h2>
+    <p>По вопросам конфиденциальности: <a href="mailto:yourumka@gmail.com">yourumka@gmail.com</a>.</p>
+  </div>
+
+  <div class="card">
+    <h2 style="margin-top:0">Privacy Policy (English)</h2>
+    <p>AI Meeting Assistant is a Windows desktop app that records the user's online meetings, transcribes and summarizes them, and saves the results to the user's own Google Drive.</p>
+    <ul>
+      <li><b>Google user data.</b> The app requests only the <code>drive.file</code> scope. It can access only files and folders it created itself. Google user data is used solely to save meeting files to the user's Drive. It is never shared with third parties, never used for advertising and never used to train models, in line with the Google API Services User Data Policy, including the Limited Use requirements.</li>
+      <li><b>OpenAI.</b> Meeting audio and text are sent to OpenAI for transcription and summarization, using the user's own API key.</li>
+      <li><b>Storage.</b> Recordings, transcripts and credentials are stored locally on the user's computer. Credentials are encrypted with Windows DPAPI.</li>
+      <li><b>No developer servers.</b> The developer operates no servers and does not collect or store any user data.</li>
+      <li><b>Revoking access.</b> Users can revoke access at any time in the app settings or at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      <li><b>Contact:</b> <a href="mailto:yourumka@gmail.com">yourumka@gmail.com</a></li>
+    </ul>
+    <p><a href="index.html">← AI Meeting Assistant</a></p>
+  </div>
+</main>
+</body>
+</html>
